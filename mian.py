@@ -34,9 +34,7 @@ while True:
         # Add a movie by ID
         pelicula_elegida_id = int(input("Seleccione ID de la pelicula que quiere a gregar a su lista: "))
         # list_dict_peliculas should be defined before this usage
-        list_dict_peliculas
-        Pelicula_elegida = elegir_peli(pelicula_elegida_id, list_dict_peliculas)
-        print(Pelicula_elegida)
+        Pelicula_elegida = elegir_peli(pelicula_elegida_id)
     elif option == "3":
         # Replace an existing movie by ID
         nueva_pelicula = int(input("Coloque el ID del titulo que quiere cambiar: ").strip())

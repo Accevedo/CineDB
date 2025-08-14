@@ -13,11 +13,10 @@ def mostrar_peliculas(titulo_peli):
     return resultado["data"]
 
 # Elegir una película por ID de una lista y guardarla en CSV
-def elegir_peli(id, peliculas):
-    for peli in peliculas: 
-        if peli['id'] == id:
-            return crear_csv(peli, id)
-    return {}
+def elegir_peli(id):
+    info_movie  = pelis_info_by_id(id)
+    add_movie = info_movie['data']
+    return crear_csv(add_movie, id)
 
 # Eliminar una película del archivo CSV por ID
 def eliminar_pelicula(id):
