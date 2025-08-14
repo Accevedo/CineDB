@@ -3,3 +3,4 @@ end_point = "https://api.themoviedb.org/3/search/movie"
 language =  "es-ES"
 file = "data/peliculas.csv"
 my_genre_map = None
+my_country_map = None

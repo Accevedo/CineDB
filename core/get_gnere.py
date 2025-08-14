@@ -20,6 +20,7 @@ def genre_map() -> dict[int, str]:
         data = respuesta.json()  # Parse the JSON response
         # Build a dictionary mapping genre IDs to genre names
         genre_map = {int(genre["id"]): genre['name'] for genre in data.get("genres", [])}
+        print(genre_map)
         # Cache the genre map in my_globals
         my_globals.my_genre_map = genre_map
         return genre_map

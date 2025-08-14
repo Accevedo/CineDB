@@ -1,7 +1,7 @@
 import requests
 from tabulate import tabulate
 from config import my_globals
-from core.gnere import genre_map
+from core.get_gnere import genre_map
 import json
 
 # Obtiene información de una película por su ID desde la API de TMDB
@@ -27,6 +27,7 @@ def pelis_info_by_id(id):
 
         # Extrae los nombres de los géneros
         nombres_genre_id = [genre.get('name') for genre in formato_json.get('genres')]
+        country_name = [country.get("name") for country in formato_json.get('production_countries')]
 
         # Construye el diccionario con los datos relevantes de la película
         datos_pelis = {
@@ -35,7 +36,8 @@ def pelis_info_by_id(id):
                 "popularidad": formato_json['popularity'],
                 "votaciones": formato_json['vote_average'],
                 "sinopsis": sinopsis_truncada,
-                "Generos":  '|'.join(nombres_genre_id) if nombres_genre_id else ""
+                "Generos":  '|'.join(nombres_genre_id) if nombres_genre_id else "",
+                "Country": "|".join(country_name) if country_name else ""
             }
 
         # Devuelve los datos en un diccionario indicando éxito

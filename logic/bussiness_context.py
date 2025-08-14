@@ -80,7 +80,8 @@ def reemplazar_pelicula_csv(old_id, new_id=None):
         "popularidad": float(pelicula_nueva.get("popularidad", 0)),
         "votaciones": float(pelicula_nueva.get("votaciones", 0)),
         "sinopsis": pelicula_nueva.get("sinopsis", ""),
-        "Generos": pelicula_nueva.get("Generos", "")
+        "Generos": pelicula_nueva.get("Generos", ""),
+        "Country" : pelicula_nueva.get("Country", "")
     }
     reemplazo.append({
         "id": nueva_fila["id"],
@@ -88,11 +89,12 @@ def reemplazar_pelicula_csv(old_id, new_id=None):
         "popularidad": nueva_fila["popularidad"],
         "votaciones": nueva_fila["votaciones"],
         "sinopsis": nueva_fila["sinopsis"],
-        "Generos": nueva_fila["Generos"]
+        "Generos": nueva_fila["Generos"],
+        'Country' : nueva_fila['Country']
     })
 
     # 5) Escribir el archivo CSV actualizado (header + filas)
-    campos = ["id", "title", "popularidad", "votaciones", "sinopsis", "Generos"]
+    campos = ["id", "title", "popularidad", "votaciones", "sinopsis", "Generos", "Country"]
     with open(my_globals.file, mode="w", newline="", encoding="utf-8") as new_file:
         escribiendo_archivo = csv.DictWriter(new_file, fieldnames=campos)
         escribiendo_archivo.writeheader()

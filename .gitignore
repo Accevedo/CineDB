@@ -1,0 +1,19 @@
+# Directorio de entornos virtuales de Python
+env/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Archivos de la base de datos (si usas SQLite u otra similar)
+*.db
+
+# Archivos de datos que se generan en el proyecto
+data/peliculas.csv
+
+# Otros archivos de VS Code
+.vscode/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
