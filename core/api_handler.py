@@ -1,8 +1,10 @@
 import requests
-from tabulate import tabulate
 from config import my_globals
 from core.get_gnere import genre_map
+from helper import limpieza
+import math
 import json
+
 
 # Obtiene información de una película por su ID desde la API de TMDB
 def pelis_info_by_id(id):
@@ -29,15 +31,33 @@ def pelis_info_by_id(id):
         nombres_genre_id = [genre.get('name') for genre in formato_json.get('genres')]
         country_name = [country.get("name") for country in formato_json.get('production_countries')]
 
+
+        #Aplicando pipeline desde la fuentes de datos 
+        recaudo = limpieza.limpiar_formatear_datos_numericos(formato_json.get('revenue'))
+        duracion = limpieza.limpiar_formatear_datos_numericos(formato_json.get('runtime'))
+        votaciones = limpieza.limpiar_formatear_datos_numericos(formato_json.get('vote_average'))
+        popularidad = limpieza.limpiar_formatear_datos_numericos(formato_json.get('popularity'))
+        title = formato_json.get('title', "")
+        sinopsis = sinopsis_truncada if sinopsis_truncada else ""
+        generos = '|'.join(nombres_genre_id) if nombres_genre_id else ""
+        paises = "|".join(country_name) if country_name else ""
+
+
+        
+
+
         # Construye el diccionario con los datos relevantes de la película
         datos_pelis = {
-                "id": formato_json['id'],
-                "title": formato_json['title'],
-                "popularidad": formato_json['popularity'],
-                "votaciones": formato_json['vote_average'],
-                "sinopsis": sinopsis_truncada,
-                "Generos":  '|'.join(nombres_genre_id) if nombres_genre_id else "",
-                "Country": "|".join(country_name) if country_name else ""
+                "id": int(formato_json.get('id')),
+                "title": title,
+                "popularidad": popularidad,
+                "votaciones": votaciones,
+                "sinopsis": sinopsis,
+                "generos":  generos,
+                "paises": paises,
+                "fecha_emision" : formato_json.get("release_date"),
+                "recaudo_usd": recaudo,
+                "duracion_min": int(duracion)
             }
 
         # Devuelve los datos en un diccionario indicando éxito

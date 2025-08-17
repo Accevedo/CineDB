@@ -3,7 +3,7 @@ from core.registrar_peliculas import crear_csv
 from tabulate import tabulate
 from config import my_globals
 import csv
-
+from auditoria.logs_auditoria import crear_lista_logs
 # Mostrar información de películas por título
 def mostrar_peliculas(titulo_peli):
     resultado  = pelis_info_by_name(titulo_peli)
@@ -16,6 +16,7 @@ def mostrar_peliculas(titulo_peli):
 def elegir_peli(id):
     info_movie  = pelis_info_by_id(id)
     add_movie = info_movie['data']
+    crear_lista_logs(add_movie, "agregar", id)
     return crear_csv(add_movie, id)
 
 # Eliminar una película del archivo CSV por ID
@@ -79,8 +80,12 @@ def reemplazar_pelicula_csv(old_id, new_id=None):
         "popularidad": float(pelicula_nueva.get("popularidad", 0)),
         "votaciones": float(pelicula_nueva.get("votaciones", 0)),
         "sinopsis": pelicula_nueva.get("sinopsis", ""),
-        "Generos": pelicula_nueva.get("Generos", ""),
-        "Country" : pelicula_nueva.get("Country", "")
+        "generos": pelicula_nueva.get("Generos", ""),
+        "paises" : pelicula_nueva.get("Country", ""),
+        "fecha_de_emision": pelicula_nueva.get("Fecha_de_emision", "N/A"),
+        "recaudo_usd": float(pelicula_nueva.get("Reacaudo", "")),
+        "duracion_min": pelicula_nueva.get( "Duracion", "")
+
     }
     reemplazo.append({
         "id": nueva_fila["id"],
@@ -88,12 +93,16 @@ def reemplazar_pelicula_csv(old_id, new_id=None):
         "popularidad": nueva_fila["popularidad"],
         "votaciones": nueva_fila["votaciones"],
         "sinopsis": nueva_fila["sinopsis"],
-        "Generos": nueva_fila["Generos"],
-        'Country' : nueva_fila['Country']
+        "generos": nueva_fila["Generos"],
+        'paises' : nueva_fila['Country'],
+        "fecha_de_emision": nueva_fila["Fecha_de_emision"],
+        "reacaudo_usd" : nueva_fila["Reacaudo"],
+        "duracion_min" : nueva_fila['Duracion']
+
     })
 
     # 5) Escribir el archivo CSV actualizado (header + filas)
-    campos = ["id", "title", "popularidad", "votaciones", "sinopsis", "Generos", "Country"]
+    campos = ["id", "title", "popularidad", "votaciones", "sinopsis", "generos", "paises", "fecha_de_emision", 'recaudo_usd', 'duracion_min']
     with open(my_globals.file, mode="w", newline="", encoding="utf-8") as new_file:
         escribiendo_archivo = csv.DictWriter(new_file, fieldnames=campos)
         escribiendo_archivo.writeheader()

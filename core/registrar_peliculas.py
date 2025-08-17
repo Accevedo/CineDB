@@ -20,7 +20,19 @@ def crear_csv(pelicula, id, file=file):
 
     # Abre el archivo en modo agregar (append)
     with open(file, mode="a", newline="", encoding='utf-8') as f:
-        campos = ["id", "title", "popularidad", "votaciones", "sinopsis", "Generos", 'Country']
+        campos = [
+                    "id",  
+                    "title", 
+                    "popularidad", 
+                    "votaciones", 
+                    "sinopsis", 
+                    "generos", 
+                    'paises',
+                    "fecha_emision",
+                    "recaudo_usd",
+                    "duracion_min"
+                    
+                    ]
         Escribiendo_archivo = csv.DictWriter(f, fieldnames=campos)
         # Si el archivo está vacío, escribe el encabezado
         if f.tell() == 0:

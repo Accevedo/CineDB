@@ -1,2 +1,6 @@
-id,title,popularidad,votaciones,sinopsis,Generos,Country
-385810,Us,0.8898,4.5,"When the police finds a necklace with some criminal, a detec...",Drama|TV Movie,United States of America
+id,title,popularidad,votaciones,sinopsis,generos,paises,fecha_de_emision,reacaudo_usd,duracion_min
+9928,Robots,6.6753,6.5,Rodney Copperbottom is a young robot inventor who dreams of ...,Animation|Comedy|Family|Science Fiction,United States of America,2005-03-10,262511490.0,90
+1087192,How to Train Your Dragon,321.847,8.027,"On the rugged isle of Berk, where Vikings and dragons have b...",Fantasy|Family|Action|Adventure,United States of America,2025-06-06,623654280.0,125.0
+773099,Mário,0.4196,6.4,,Drama,Brazil,2000-06-07,0.0,86
+613234,Coraline: Creepy Coraline,1.4092,3.5,,Documentary,United States of America,2009-07-21,0.0,6
+1203351,Dawgz,0.0264,0.0,"In order to dodge his problems in Switzerland, Krystian has ...",,,,0.0,20

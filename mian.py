@@ -1,5 +1,6 @@
 # Import necessary functions from other modules
-from logic.bussiness_context import mostrar_peliculas, elegir_peli, eliminar_pelicula, reemplazar_pelicula_csv
+from logic.bussiness_context import mostrar_peliculas, elegir_peli, eliminar_pelicula, reemplazar_pelicula_csv 
+from auditoria.logs_auditoria import generar_batch_id, registrar_logs
 #from core.api_handler import pelis_info_by_id
 #from core.get_origin_country import get_query_country
 #from core.get_gnere import genre_map
@@ -35,10 +36,16 @@ while True:
         pelicula_elegida_id = int(input("Seleccione ID de la pelicula que quiere a gregar a su lista: "))
         # list_dict_peliculas should be defined before this usage
         Pelicula_elegida = elegir_peli(pelicula_elegida_id)
+        generar_batch_id()
+       
+        
+        
+        
     elif option == "3":
         # Replace an existing movie by ID
         nueva_pelicula = int(input("Coloque el ID del titulo que quiere cambiar: ").strip())
         remplazar = reemplazar_pelicula_csv(nueva_pelicula)
+        generar_batch_id()
         print(remplazar)
     elif option == "4":
         # Delete a movie by ID
