@@ -17,6 +17,8 @@ Desde esta app puedes:
 
 📊 Generar visualizaciones con Plotly a partir de tus películas favoritas
 
+
+
 🧠 Tecnologías utilizadas
 Tecnología	Uso principal
 Python	Lenguaje base
@@ -25,6 +27,14 @@ Plotly	Gráficos interactivos
 pandas	Análisis de datos
 requests	Consumo de API
 TMDB API	Fuente de datos de películas
+
+
+
+
+
+
+
+
 🗂️ Estructura del Proyecto
 CINE_DB/
 │
@@ -58,6 +68,9 @@ CINE_DB/
 │   └── limpieza.py
 │
 └── env/                     # Entorno virtual (excluido del control de versiones)
+
+
+
 
 🚀 Cómo ejecutar el proyecto
 
