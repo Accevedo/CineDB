@@ -2,7 +2,7 @@ import requests
 from config import my_globals
 from core.get_gnere import genre_map
 from helper import limpieza
-import math
+from datetime import datetime
 import json
 
 
@@ -49,6 +49,7 @@ def pelis_info_by_id(id):
         # Construye el diccionario con los datos relevantes de la película
         datos_pelis = {
                 "id": int(formato_json.get('id')),
+                "fecha_guardado": datetime.now().isoformat(timespec='seconds'),
                 "title": title,
                 "popularidad": popularidad,
                 "votaciones": votaciones,

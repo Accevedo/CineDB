@@ -1,3 +1,89 @@
 batch_id,accion,id,titulo,faltante_recaudo,faltante_generos,faltante_paises,faltante_sinopsis
-20250817_142458,agrgear,1203351,Dawgz,0,1,1,0
-20250817_142506,agrgear,773099,Mário,0,0,0,1
+20250818_153037,agrgear,157336,Interstellar,0,0,0,0
+20250818_153131,agrgear,27205,Inception,0,0,0,0
+20250818_153141,agrgear,550,Fight Club,0,0,0,0
+20250818_153156,agrgear,475557,Joker,0,0,0,0
+20250818_153217,agrgear,603692,John Wick: Chapter 4,0,0,0,0
+20250818_153237,agrgear,120,The Lord of the Rings: The Fellowship of the Ring,0,0,0,0
+20250818_153303,agrgear,11,Star Wars,0,0,0,0
+20250818_153313,agrgear,278,The Shawshank Redemption,0,0,0,0
+20250818_153321,agrgear,155,The Dark Knight,0,0,0,0
+20250818_153351,agrgear,24428,The Avengers,0,0,0,0
+20250820_145824,agrgear,1078605,Weapons,0,0,0,0
+20250820_150003,agrgear,1078605,Weapons,0,0,0,0
+20250820_150206,agrgear,1289518,Megaman,0,0,0,0
+20250820_151215,agrgear,10386,The Iron Giant,0,0,0,0
+20250820_151334,agrgear,552524,Lilo & Stitch,0,0,0,0
+20250820_151453,agrgear,10693,Peter Pan,0,0,0,0
+20250820_151947,agrgear,502356,The Super Mario Bros. Movie,0,0,0,0
+20250820_162113,agrgear,157336,Interstellar,0,0,0,0
+20250820_162134,agrgear,157336,Interstellar,0,0,0,0
+20250820_162146,agrgear,550,Fight Club,0,0,0,0
+20250820_162217,agrgear,550,Fight Club,0,0,0,0
+20250820_162233,agrgear,475557,Joker,0,0,0,0
+20250820_162243,agrgear,120,The Lord of the Rings: The Fellowship of the Ring,0,0,0,0
+20250820_162254,agrgear,603692,John Wick: Chapter 4,0,0,0,0
+20250820_162300,agrgear,11,Star Wars,0,0,0,0
+20250820_162306,agrgear,278,The Shawshank Redemption,0,0,0,0
+20250820_162312,agrgear,155,The Dark Knight,0,0,0,0
+20250820_162356,agrgear,24428,The Avengers,0,0,0,0
+20250820_162419,agrgear,122,The Lord of the Rings: The Return of the King,0,0,0,0
+20250820_162431,agrgear,680,Pulp Fiction,0,0,0,0
+20250820_162438,agrgear,424,Schindler's List,0,0,0,0
+20250820_162442,agrgear,422,8½,0,0,0,0
+20250820_162506,agrgear,13,Forrest Gump,0,0,0,0
+20250820_164358,agrgear,422,8½,0,0,0,0
+20250820_164659,agrgear,550,Fight Club,0,0,0,0
+20250820_165043,agrgear,550,Fight Club,0,0,0,0
+20250820_165131,agrgear,550,Fight Club,0,0,0,0
+20250820_165640,agrgear,424,Schindler's List,0,0,0,0
+20250820_165642,agrgear,424,Schindler's List,0,0,0,0
+20250820_165644,agrgear,424,Schindler's List,0,0,0,0
+20250820_165645,agrgear,424,Schindler's List,0,0,0,0
+20250820_165645,agrgear,424,Schindler's List,0,0,0,0
+20250820_165757,agrgear,422,8½,0,0,0,0
+20250820_165809,agrgear,224,Man of Marble,0,0,0,0
+20250820_171334,agrgear,550,Fight Club,0,0,0,0
+20250820_171529,agrgear,550,Fight Club,0,0,0,0
+20250820_171621,agrgear,422,8½,0,0,0,0
+20250820_172004,agrgear,422,8½,0,0,0,0
+20250820_172355,agrgear,422,8½,0,0,0,0
+20250820_174509,agrgear,550,Fight Club,0,0,0,0
+20250820_174538,agrgear,550,Fight Club,0,0,0,0
+20250820_174554,agrgear,157336,Interstellar,0,0,0,0
+20250820_175158,agrgear,26607,WMD: Weapons of Mass Deception,0,0,0,0
+20250820_175247,agrgear,550,Fight Club,0,0,0,0
+20250820_175254,agrgear,16910,Naruto the Movie: Legend of the Stone of Gelel,0,0,0,0
+20250820_175348,agrgear,16910,Naruto the Movie: Legend of the Stone of Gelel,0,0,0,0
+20250820_175406,agrgear,16911,The Inhabited Island,0,0,0,0
+20250820_175513,agrgear,16912,The Colditz Story,0,0,0,0
+20250820_180224,agrgear,16911,The Inhabited Island,0,0,0,0
+20250820_182118,agrgear,422,8½,0,0,0,0
+20250820_182142,agrgear,1048503,Mini,0,0,0,0
+20250820_182333,agrgear,62405,Don Donald,0,0,0,0
+20250820_183246,agrgear,62405,Don Donald,0,0,0,0
+20250820_183344,agrgear,422,8½,0,0,0,0
+20250821_210841,agrgear,16910,Naruto the Movie: Legend of the Stone of Gelel,0,0,0,0
+20250821_211228,agrgear,424,Schindler's List,0,0,0,0
+20250821_211409,agrgear,422,8½,0,0,0,0
+20250821_211429,agrgear,16910,Naruto the Movie: Legend of the Stone of Gelel,0,0,0,0
+20250821_211707,agrgear,424,Schindler's List,0,0,0,0
+20250821_215845,Remplazar,424,Schindler's List,0,0,0,0
+20250821_220018,agrgear,1078605,Weapons,0,0,0,0
+20250821_222547,Remplazar,422,8½,0,0,0,0
+20250821_223858,Remplazar,424,Schindler's List,0,0,0,0
+20250821_224045,Remplazar,422,8½,0,0,0,0
+20250821_224306,Remplazar,424,Schindler's List,0,0,0,0
+20250822_210225,agrgear,346698,Barbie,0,0,0,0
+20250822_210405,agrgear,569094,Spider-Man: Across the Spider-Verse,0,0,0,0
+20250822_212005,agrgear,19995,Avatar,0,0,0,0
+20250822_223352,agrgear,1151031,Bring Her Back,0,0,0,0
+20250822_223543,Remplazar,424,Schindler's List,0,0,0,0
+20250822_224721,agrgear,1122099,The Ballad of Wallis Island,0,0,0,0
+20250823_220506,agrgear,16910,Naruto the Movie: Legend of the Stone of Gelel,0,0,0,0
+20250823_220550,Remplazar,16912,The Colditz Story,0,0,0,0
+20250826_145354,Remplazar,422,8½,0,0,0,0
+20250826_145553,Remplazar,424,Schindler's List,0,0,0,0
+20250826_150030,Remplazar,422,8½,0,0,0,0
+20250826_151242,agrgear,1386216,The Matrix,0,1,0,0
+20250826_151313,Remplazar,603,The Matrix,0,0,0,0

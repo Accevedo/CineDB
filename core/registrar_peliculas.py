@@ -1,6 +1,7 @@
 import os 
 import csv
 from config.my_globals import file
+import pandas as pd
 
 # Función para crear o agregar una película a un archivo CSV
 def crear_csv(pelicula, id, file=file):
@@ -21,7 +22,8 @@ def crear_csv(pelicula, id, file=file):
     # Abre el archivo en modo agregar (append)
     with open(file, mode="a", newline="", encoding='utf-8') as f:
         campos = [
-                    "id",  
+                    "id",
+                    "fecha_guardado",  
                     "title", 
                     "popularidad", 
                     "votaciones", 
@@ -40,3 +42,6 @@ def crear_csv(pelicula, id, file=file):
 
         # Escribe la información de la película en el archivo CSV
         Escribiendo_archivo.writerow(pelicula)     
+
+    df = pd.read_csv(file, parse_dates=["fecha_emision"])
+    return df.set_index('id')

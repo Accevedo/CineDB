@@ -1,6 +1,8 @@
-id,title,popularidad,votaciones,sinopsis,generos,paises,fecha_de_emision,reacaudo_usd,duracion_min
-9928,Robots,6.6753,6.5,Rodney Copperbottom is a young robot inventor who dreams of ...,Animation|Comedy|Family|Science Fiction,United States of America,2005-03-10,262511490.0,90
-1087192,How to Train Your Dragon,321.847,8.027,"On the rugged isle of Berk, where Vikings and dragons have b...",Fantasy|Family|Action|Adventure,United States of America,2025-06-06,623654280.0,125.0
-773099,Mário,0.4196,6.4,,Drama,Brazil,2000-06-07,0.0,86
-613234,Coraline: Creepy Coraline,1.4092,3.5,,Documentary,United States of America,2009-07-21,0.0,6
-1203351,Dawgz,0.0264,0.0,"In order to dodge his problems in Switzerland, Krystian has ...",,,,0.0,20
+id,fecha_guardado,title,popularidad,votaciones,sinopsis,generos,paises,fecha_emision,recaudo_usd,duracion_min
+1078605,2025-08-21T22:00:18,Weapons,187.2955,7.505,When all but one child from the same class mysteriously vani...,Horror|Mystery,United States of America,2025-08-04,161863324.0,129
+346698,2025-08-22T21:02:25,Barbie,17.1113,6.965,Barbie and Ken are having the time of their lives in the col...,Comedy|Adventure,United Kingdom|United States of America,2023-06-18,1445638421.0,114
+569094,2025-08-22T21:04:05,Spider-Man: Across the Spider-Verse,21.8013,8.342,"After reuniting with Gwen Stacy, Brooklyn’s full-time, frien...",Animation|Action|Adventure|Science Fiction,United States of America,2023-05-31,690897910.0,140
+19995,2025-08-22T21:20:05,Avatar,21.5954,7.592,"In the 22nd century, a paraplegic Marine is dispatched to th...",Action|Adventure|Fantasy|Science Fiction,United States of America|United Kingdom,2009-12-15,2923706026.0,162
+1151031,2025-08-22T22:33:52,Bring Her Back,74.7317,7.4,"Following the death of their father, a brother and sister ar...",Horror,Australia|United States of America,2025-05-28,33023752.0,104
+1122099,2025-08-22T22:47:21,The Ballad of Wallis Island,4.0883,7.144,An eccentric lottery winner who lives alone on a remote isla...,Comedy|Drama|Music,United Kingdom|United States of America,2025-03-28,736965.0,100
+422,2025-08-26T15:00:30,8½,2.9019,8.1,"Guido Anselmi, a film director, finds himself creatively bar...",Drama,Italy|France,1963-02-14,0.0,139

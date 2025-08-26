@@ -10,9 +10,6 @@ def generar_batch_id() -> str:
     return fecha_actual
 
 def procesar_detalle_pelicula(data):
-    
-
-   
     if data == "":
         return 1
     if isinstance(data, float) and math.isnan(data):
@@ -20,21 +17,23 @@ def procesar_detalle_pelicula(data):
     return 0  # todo bien
     
 
-def crear_lista_logs(list_log, accion="agregar", id=id):
+def crear_lista_logs(log, accion, id=id):
+
+    print(log)
     
-    lista_log = {
+    logs = {
         "batch_id" : generar_batch_id(),
         "accion" : "agrgear" if accion == "agregar" else "Remplazar",
         "id" : id,
-        "titulo": list_log.get("title"),
-        "faltante_recaudo" : procesar_detalle_pelicula(list_log['recaudo_usd']),
-        "faltante_generos" : procesar_detalle_pelicula(list_log['generos']),
-        "faltante_paises"  : procesar_detalle_pelicula(list_log['paises']),
-        "faltante_sinopsis": procesar_detalle_pelicula(list_log['sinopsis'])
+        "titulo": log.get("title"),
+        "faltante_recaudo" : procesar_detalle_pelicula(log['recaudo_usd']),
+        "faltante_generos" : procesar_detalle_pelicula(log['generos']),
+        "faltante_paises"  : procesar_detalle_pelicula(log['paises']),
+        "faltante_sinopsis": procesar_detalle_pelicula(log['sinopsis'])
         
     }
 
-    return registrar_logs(lista_log)
+    return registrar_logs(logs)
     
 def registrar_logs(pelicula):
     os.makedirs(os.path.dirname(file_logs), exist_ok=True)
