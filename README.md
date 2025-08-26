@@ -37,7 +37,7 @@ Desde esta app puedes:
 CINE_DB/
 ├── app.py                    # Archivo principal de Streamlit
 ├── main2.py                 # Archivo alternativo de ejecución
-├── mian.py                  # (Error tipográfico de pruebas)
+├── mian.py                  # (Error tipográfico debe de ser main, aqui se estaban probando diversas funciones del proyecto)
 │
 ├── .gitignore               # Ignora carpetas/envs locales
 │
